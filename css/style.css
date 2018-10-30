@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+#header_wrap{width:100%;background:#cdcdcd;}
+	#header{width:1280px;height:140px;margin:0 auto;}
+	#header:after{content:"";display:block;clear:both;}
+	#header>h1{float:left;width:177px;height:140px;background:url(../images/logo_m.png) no-repeat 0 40px;text-indent:-9999px;}
+	#header>ul{float:right;position:relative;width:1000px;}
+	#header>ul:after{content:"";display:block;clear:both;}
+	#header>ul>li{float:left;width:25%;_background:#f00;}
+	#header>ul>li>a{display:block;line-height:150px;font-size:18px;font-weight:bold;text-align:center;}
+		.gnb>li>.depth2{width:500px;position:absolute;background:skyblue;}
+		.gnb>li>.depth2:after{content:"";display:block;clear:both;}
+		.gnb>li>.depth2>li{float:left;/*display:none;*/background:#f00;}
+		.gnb>li>.depth2>li:nth-child(1){/*display:block;*/}
+		.gnb>li>.depth2>li:nth-child(2){left:0;display:none;}
+		.gnb>li>.depth2>li:nth-child(3){left:0;display: none;}
+		.gnb>li>.depth2>li:nth-child(4){left:0;display: none;}
+		.gnb>li>.depth2>li>a{display:block;text-align:center;padding:0 20px;}
