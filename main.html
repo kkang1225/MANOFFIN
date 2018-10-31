@@ -8,6 +8,21 @@
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
+<script>
+	$(function(){
+		var menu = $(".gnb>li");
+		var depth2 = $(".depth2");
+
+		depth2.hide();
+		menu.mouseenter(function(){
+			depth2.eq($(this).index()).stop().slideDown();
+			$("#content_wrap").css("margin-top",50);
+		}).mouseleave(function(){
+			depth2.stop().slideUp();
+			$("#content_wrap").css("margin-top",0);
+		});
+	});
+</script>
 <body>
 	<div id="header_wrap">
 		<div id="header">
@@ -47,6 +62,18 @@
 						<li><a href="#">마노핀SNS</a></li>
 					</ul>
 				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="content_wrap">
+		<div id="content">
+			<ul class="banner">
+				<li><a href="#"><img src="./images/banner01.jpg" alt="banner01"></a></li>
+				<li><a href="#"><img src="./images/banner02.jpg" alt="banner02"></a></li>
+				<li><a href="#"><img src="./images/banner03.jpg" alt="banner03"></a></li>
+				<li><a href="#"><img src="./images/banner04.jpg" alt="banner04"></a></li>
+				<li><a href="#"><img src="./images/banner05.png" alt="banner05"></a></li>
+				<li><a href="#"><img src="./images/banner06.png" alt="banner06"></a></li>
 			</ul>
 		</div>
 	</div>
